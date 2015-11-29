@@ -6,13 +6,10 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Firebase" => "support@firebase.com" }
   s.social_media_url = "https://twitter.com/firebase"
-  s.source       = { :git => "https://github.com/firebase/FirebaseUI-iOS.git", :tag => 'v0.3.0' }
+  s.source       = { :git => "https://github.com/chrisellsworth/FirebaseUI-iOS.git", :branch => 'no-auth' }
   s.source_files = "FirebaseUI/**/*.{h,m}"
   s.resources = "FirebaseUI/**/Resources/*"
   s.dependency "Firebase", "~>2.2"
-  s.dependency "FBSDKCoreKit"
-  s.dependency "FBSDKLoginKit"
-  s.dependency "Google/SignIn"
   s.platform = :ios
   s.ios.deployment_target = "8.0"
   s.ios.framework = "UIKit", "Accounts"
